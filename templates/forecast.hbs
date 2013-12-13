@@ -1,10 +1,15 @@
 <table class="table table-striped">
-    <tr><td><h3>Day</h3></td><td><h3>Forecast</h3></td><td><h3>Max/Min Temp</h3></td></tr>
-{{#each daily.data}}
-    <tr><td>{{@index}}</td>
-    <td> {{summary}} </td>
-    <td> {{apparentTemperatureMax}}/{{apparentTemperatureMin}} </td>
-    </tr>
+    <thead>
+        <tr><th>Day</th><th>Forecast</th><th>Sunrise/Set</th><th>High/Low Temp</th></tr>
+    </thead>
+{{#each sevenDayForecast}}
+    <tbody>
+        <tr><td> {{date}} </td>
+        <td> {{summary}} </td>
+        <td> {{sunRise}} am / {{sunSet}} pm</td>
+        <td> {{maxTemp}} / {{minTemp}} &deg; Fahrenheit  </td>
+        </tr>
+    </tbody>
 {{/each}}
 </table>
 

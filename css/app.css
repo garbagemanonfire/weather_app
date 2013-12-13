@@ -14,6 +14,6 @@ body {
   margin: 25px auto;
 }
 
-/*p{
-    font-style: bold;
-}*/
+thead {
+  font-size: 1.17em;
+}
