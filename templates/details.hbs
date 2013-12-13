@@ -1,0 +1,10 @@
+<h3>Detailed Forecast for the Day</h3>
+</br>
+<table class="table table-striped">
+{{#each currently}}
+    <tr>
+        <td><b>{{@key}}:</b></td>
+        <td>{{this}}</td>
+    </tr>
+{{/each}} 
+</table>
