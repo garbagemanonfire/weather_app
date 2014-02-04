@@ -1,20 +1,16 @@
-<div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Currently</h3>
-        <p><b>Temperature:</b> {{currently.temperature}}</p>
-        <p><b>It Is:</b> {{currently.summary}}</p> 
-      </div>
-      <div class="col-md-4">
-        <h3>Today</h3>
-        <p><b>Weather Summary:</b> {{today.data.0.summary}}</p>
-        <p><b>Max/Min Temperature:</b> {{today.data.0.apparentTemperatureMax}}/{{today.data.0.apparentTemperatureMin}}</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Weekly</h3>
-        <p><b>Weather Summary:</b> {{today.summary}}</p>
-      </div>
-    </div>
+<div class="currently-container">
+  <div class="col-xs-6 col-md-4">
+    <h3>Weekly</h3>
+    <p><b>Weather Summary:</b> {{today.summary}}</p>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <h3>Today</h3>
+    <p><b>Weather Summary:</b> {{today.data.0.summary}}</p>
+    <p><b>Max/Min Temperature:</b> {{today.data.0.apparentTemperatureMax}}/{{today.data.0.apparentTemperatureMin}}</p>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <h3>Currently</h3>
+    <p><b>Temperature:</b> {{currently.temperature}}</p>
+    <p><b>It Is:</b> {{currently.summary}}</p> 
+  </div>
 </div>
-
-
